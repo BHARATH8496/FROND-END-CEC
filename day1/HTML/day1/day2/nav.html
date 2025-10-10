@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+    background-color: cadetblue;
+    font-family: fantasy;
+}
+form{
+    color:green(127, 225, 212);
+    background-color: burlywood;
+    font-family: cambria,cochin,georgia,times,'times new roman', serif;
+    font-size: medium;
+    margin: 250px; 
+    padding: 250px;
+    border-radius: 2px;
+    text-align: center;
+}
+  .hig{
+    padding: 20px;
+    border:2px solid saddlebrown;
+    border-radius: 20px;
+  }
+label{
+  color: blueviolet( 243, 15 ,15);
+  background-color: rgb(67, 153, 78);
+  font-family: arial, helvetica,sans-serif;
+  font-size: small;
+}
+.password{
+    color: red;
+    background-color: aquamarine;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="forms.html" target="_blanks">forms</a></li>
+            <li><a href="C:\Users\infinix\OneDrive\Desktop\PARVAM_FRONT-END_CEC\FROND-END-CEC\day1\HTML\day1\tables.html">tables</a></li>
+                        </ul>
+    </nav>
+    <h1 style="text-align:center; color: aquamarine(1, 249, 166); background-color: rgb(60, 60, 97);font-family: cambria,cochin,georgia,times,'times new roman',serif;">basic form</h1>
+     <form action="/submit" method="POST">
+        <h1>Basic Form</h1>
+        <div class="hig">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      </div>
+      <div class="hig">
+      <br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      </div>
+      <div class="hig">
+      <label for="password">
+          Password 
+        <input type="password" id="password" name="password" required>
+      </label>
+      <br>
+      </div>
+      <div class="hig">
+      <label for="male">
+        Male
+        <input type="radio" id="male" name="gender" value="male">
+      </label>
+      </div>
+      <div class="hig">
+      <label for="female">
+        Female
+        <input type="radio" id="female" name="gender" value="female">
+      </label>
+      </div>
+      <div class="hig">
+      <br>
+      <h3>Terms & Condtions</h3>
+      <label>
+        <input type="checkbox" name="terms" required/>
+        I agree to Terms and Condtions
+      </label>
+      <br><br>
+      </div>
+      <div class="hig">
+      <label for="department">
+        Department
+        <select id="department" name="department">
+            <option value="ISE">ISE</option>
+            <option value="CSE">CSE</option>
+            <option value="MECH">MECH</option>
+            <option value="CIV">CIV</option>
+            <option value="AIML">AIML</option>
+        
+          </select>
+      </label>
+      <br>
+      </div>
+       <div class="hig">
+      <label for="date">
+          Date:
+        <input type="date" id="birthday" name="birthday" required>
+      </label><br>
+     </div>
+      <div class="hig">
+      <textarea name="description" id="description">Description
+      </textarea><br>
+      </div>
+      <div class="hig">
+      <label for="video">Upload Video</label><br>
+      <input type="file" name="video" id="video" accept="video/*"><br><br>
+      </div>
+      <div class="hig">
+      <label for="pdf">Upload PDF</label><br>
+      <input type="file" name="pdf" id="pdf" accept="Application/pdf"><br><br>
+      </div>
+      <div class="hig">
+      <label for="pdf">Upload DOC</label><br>
+      <input type="file" name="doc" id="doc" accept="Application/doc"><br><br>
+      </div>
+      <div class="hig">
+      <label for="rating">give your rating</label>
+      <input type="range" name="range" id="range" min="0" max="100"><br><br>
+      </div>
+      <div class="hig">
+      <label for="rating">give your rating</label>
+      <input type="color" name="color" id="color" min="0" max="100"><br><br>
+        
+      <input type="submit" value="submit">
+      </div>
+    </form>
+</body>
+</html>
